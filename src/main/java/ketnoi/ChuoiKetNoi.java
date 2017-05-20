@@ -6,7 +6,7 @@ public class ChuoiKetNoi {
 	//String sql="jdbc:mysql://localhost:3306/ckeditor";
 	String sql = String.format(
 		        "jdbc:mysql://google/%s?cloudSqlInstance=%s&"
-		            + "socketFactory=com.google.cloud.sql.mysql.SocketFactory", "ckeditor","clear-faculty-168102:asia-northeast1:dtdmnhom12");
+		            + "socketFactory=com.google.cloud.sql.mysql.SocketFactory", "ckeditor","group12-springboot-2:asia-northeast1:dtdmgroup12");
 	
 	public String getSQL()
 	{
