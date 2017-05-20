@@ -1,7 +1,12 @@
-# Spring Boot Hello World Example with JSP
+# Báo cáo Google Cloud sử dụng CKEditor và lưu trên SQL Google
+## Danh sách thành viên nhóm 12 - Lớp Điện toán đám mây - Chiều thứ 6
+- Nguyễn Bá Đạt - 14110033
+- Trần Thanh Phong - 14110143
+- Trương Thanh Quang - 14110161
+- Tải Bảo Uy - 14110230
 
-## Guide
-https://hellokoding.com/spring-boot-hello-world-example-with-jsp/
+## Website đã deploy lên Google AppEngine
+https://optimal-harbor-167402.appspot.com
 
 ## What you'll need
 - JDK 1.7 or later
