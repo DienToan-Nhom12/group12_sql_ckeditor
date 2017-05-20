@@ -51,6 +51,23 @@
         <groupId>com.google.cloud.tools</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
         <version>1.2.1</version>
+                <configuration>
+                <!-- promote is set to true by default, you don't need this -->
+		<!-- deploy.promote>true</deploy.promote -->
+
+                <!-- stopPreviousVersion does not apply for standard appengine application -->
+		<!-- deploy.stopPreviousVersion>true</deploy.stopPreviousVersion -->
+
+                <!-- remove this customized staging directory, just use the standard maven build dir -->
+		<!-- stage.stagingDirectory>${java.io.tmpdir}/appengine-staging</stage.stagingDirectory -->
+		<deployables>
+                        <!-- by default, ${project.build.directory}/appengine-staging is the output directory -->
+                        <!-- app.yaml in root of staging (default configuration) -->
+			<param>${project.build.directory}/appengine-staging/app.yaml</param>
+                        <!-- queue.yaml is in the generated dir of staging -->
+			<param>${project.build.directory}/appengine-staging/WEB-INF/appengine-generated/queue.yaml</param>
+		</deployables>
+	</configuration>
       </plugin>
             
             <plugin>
